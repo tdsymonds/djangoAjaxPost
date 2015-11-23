@@ -1,5 +1,5 @@
-// Django Ajax Post
-// A plugin to overlay the page whilst posting via AJAX to Django server
+// djangoAjaxPost.js
+// A jQuery plugin that posts Django form content to server via AJAX
 // version 1.0, Nov. 2015
 // by Tom Symonds
 
