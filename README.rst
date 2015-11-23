@@ -7,6 +7,12 @@ More info here: https://docs.djangoproject.com/en/1.8/ref/csrf/
 
 I've adapted the plugin to overlay the page with a loading gif, and remove form buttons on successful post.
 
+The loading gif I have used is located here:
+
+http://preloaders.net/en/3d/rings-and-ball/
+
+You can generate the gif in the colours that you require.
+
 
 Quick Start
 -----------
