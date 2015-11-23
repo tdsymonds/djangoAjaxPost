@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+	<link rel="stylesheet" href="css/djangoAdminPostStyle.css">
+
+</head>
+<body>
+
+	<form id="myForm">
+		{% csrf_token %}
+		<label>Name</label>
+		<input type="text" name="name" required>
+
+		<label>Email address</label>
+		<input type="email" name="email" required>
+
+		<input value="Submit" type="submit">	
+	</form>							
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/djangoAjaxPost.min.js"></script>
+	<script type="text/javascript">
+
+		$(function() {
+			$('#myForm').on('submit', function(event){
+                event.preventDefault();
+
+                formData = {
+            		'name' : $('input[name=name]').val(),
+					'email' : $('input[name=email]').val()
+				}
+
+				$(this).djangoAjaxPost({
+					postUrl: "http://www.example.com/post",
+					postData: formData
+				});
+			});
+		});
+
+	</script>
+
+
+
+</body>
+</html>

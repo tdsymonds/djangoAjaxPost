@@ -1,0 +1,25 @@
+.ajaxOverlay{
+    position:fixed; 
+    height:100%; 
+    width:100%; 
+    background:#252729;
+    background:rgba(0,0,0,0.8); 
+    z-index:9999;
+}
+.ajaxOverlay div{ 
+    position: fixed; 
+    top: 50%; 
+    margin: -74px 0 0 0; 
+    width: 100%; 
+    text-align: center; 
+    color: #BBBDBE; 
+    background: #111212; 
+    padding: 25px;
+}
+
+.ajaxOverlayText{
+    margin-top:10px;
+    color:#BBBDBE;
+    display: block;
+    font-size: 25px;
+}
